@@ -4,8 +4,14 @@ body {
     font-size: 15px;
 }
 
+.card {
+    border-radius: 2%;
+}
+
 .sedans-card {
     background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card-text {
@@ -27,4 +33,66 @@ body {
     background-color: hsl(31, 77%, 52%);
     border-color: hsl(0, 0%, 95%);
     color: hsl(0, 0%, 95%);
+}
+
+.suvs-card {
+    background-color: hsl(184, 100%, 22%);
+    border-radius: 0;
+}
+
+.suvs-card > .btn {
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs-card > .btn:active {
+    background-color: hsl(184, 100%, 22%);
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury-card {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.luxury-card > .btn {
+    background-color: hsl(0, 0%, 95%);
+    border-color: hsl(179, 100%, 13%);
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury-card > .btn:active {
+    background-color: hsl(179, 100%, 13%);
+    border-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.btn {
+    width: 8rem;
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .card {
+        width: 25%;
+    }
+
+    .sedans-card {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 2%;
+    }
+
+    .suvs-card {
+        border-radius: 0;
+    }
+
+    .luxury-card {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 2%;
+    }
 }
