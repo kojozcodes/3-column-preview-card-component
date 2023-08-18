@@ -74,7 +74,27 @@ body {
     width: 8rem;
 }
 
+footer {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
 @media only screen and (min-width: 1440px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    div.container {
+        height: 100vh;
+    }
+
+    .card-container {
+        height: 90%;
+    }
 
     .card {
         width: 25%;
@@ -95,4 +115,10 @@ body {
         border-bottom-left-radius: 0;
         border-top-right-radius: 2%;
     }
+
+    footer {
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
 }
